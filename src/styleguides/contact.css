@@ -1,0 +1,57 @@
+.contactus-container .contact-section h2 {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  font-weight: var(--fw-600);
+  font-size: var(--fs-1);
+  position: relative;
+}
+.contactus-container .contact-section h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 12px;
+  width: 30px;
+  height: 3px;
+  background: var(--text-gradient-yellow);
+  border-radius: 3px;
+}
+
+.contactus-container .contact-section .map-container iframe
+{ 
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 35px;
+    border: 1px solid grey;
+}
+
+.contactus-container .form-container .form-title
+{
+    font-size: var(--fs-1);
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+.contactus-container .form-container .form-row
+{
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+}
+.contactus-container .form-container input
+{
+    padding: 15px 20px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.contactus-container .form-container  .submit-btn
+{
+     background: var(--text-gradient-yellow);
+     padding: 10px;
+     border-radius: 20px;
+     margin-top: 20px;
+     display: flex;
+     gap: 5px;
+     justify-content: center;
+     align-items: center;
+}

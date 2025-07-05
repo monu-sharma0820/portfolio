@@ -1,0 +1,115 @@
+.aboutus-maincontainer {
+  padding: 30px;
+}
+.aboutus-container h2 {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  font-weight: var(--fw-600);
+  font-size: var(--fs-1);
+  position: relative;
+}
+
+.aboutus-container h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 12px;
+  width: 30px;
+  height: 3px;
+  background: var(--text-gradient-yellow);
+  border-radius: 3px;
+}
+
+.aboutus-container p {
+  color: var(--light-gray);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.aboutus-maincontainer .service .service-title {
+  margin-bottom: 35px;
+}
+
+.aboutus-maincontainer .service .service-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 25px;
+  padding: 0;
+}
+.aboutus-maincontainer .service .service-list .service-item {
+  position: relative;
+  background: var(--border-gradient-onyx);
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: var(--shadow-2);
+  z-index: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 18px;
+  padding: 30px;
+}
+.aboutus-maincontainer
+  .service
+  .service-list
+  .service-item
+  .service-item-title {
+  margin-bottom: 7px;
+  font-size: var(--fs-4);
+  color: var(--white-2);
+  text-transform: capitalize;
+}
+
+.aboutus-maincontainer .service .service-list .service-item .service-item-text {
+  color: var(--light-gray);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-3);
+  line-height: 1.6;
+}
+
+.aboutus-maincontainer .clients {
+  margin-bottom: 15px;
+}
+.aboutus-maincontainer .clients .clients-title {
+  color: var(--white-2);
+}
+.aboutus-maincontainer .clients .clients-list {
+  scroll-padding-inline: 45px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 15px;
+  margin: 0 -15px;
+  padding: 25px;
+  padding-bottom: 25px;
+  scroll-behavior: smooth;
+  overscroll-behavior-inline: contain;
+  scroll-snap-type: inline mandatory;
+  scrollbar-width: thin;
+  scrollbar-color: orange #333;
+}
+
+.aboutus-maincontainer .clients-list .swiper-scrollbar-drag {
+  background-color: var(--orange-yellow-crayola);
+}
+.aboutus-maincontainer .service .service-list .service-item .fa-mobile,
+.fa-terminal,
+.fa-notes {
+  color: var(--orange-yellow-crayola);
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* responsive  768px */
+@media (max-width: 768px) {
+  .aboutus-maincontainer .service .service-list {
+    grid-template-columns: 1fr;
+    gap: 20px 25px;
+  }
+}
+
+

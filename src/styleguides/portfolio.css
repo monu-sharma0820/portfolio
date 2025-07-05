@@ -1,0 +1,127 @@
+.portfolio-container {
+  background-color: #121212;
+  color: #ffffff;
+  padding: 60px 20px;
+}
+
+.portfolio-container h2 {
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  font-weight: 600;
+  font-size: 2.2rem;
+  position: relative;
+}
+
+.portfolio-container h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 25px;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 3px;
+  background: var(--text-gradient-yellow, #ffc107);
+  border-radius: 3px;
+}
+
+.tabs-container {
+  margin-bottom: 30px;
+}
+
+.nav.nav-underline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.nav-link {
+  color: #bbb;
+  font-weight: 500;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 8px 12px;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #fff;
+}
+.nav-item:first-child
+{
+    color: var(--orange-yellow-crayola);
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content:target {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 30px;
+}
+
+.portfolio-grid:not(:has(.tab-content:target)) #all {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.portfolio-card {
+  flex: 0 0 calc((100% - 60px) / 3);
+  background-color: #1f1f1f;
+  border-radius: 18px;
+  padding: 24px 16px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 24px rgba(255, 255, 255, 0.1);
+}
+
+.portfolio-card img {
+  max-width: 100%;
+  max-height: 160px;
+  object-fit: contain;
+  border-radius: 12px;
+  background-color: #fff;
+  padding: 12px;
+  margin-bottom: 16px;
+}
+
+.portfolio-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 4px;
+}
+
+.portfolio-card p {
+  font-size: 0.9rem;
+  color: #bbb;
+}
+
+@media (max-width: 992px) {
+  .portfolio-card {
+    flex: 0 0 calc((100% - 30px) / 2);
+  }
+}
+
+@media (max-width: 576px) {
+  .portfolio-card {
+    flex: 0 0 100%;
+  }
+
+  .nav.nav-underline {
+    gap: 20px;
+  }
+}

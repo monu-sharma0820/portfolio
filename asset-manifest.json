@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.98d8e612.css",
+    "main.js": "/static/js/main.9abcf93f.js",
+    "static/media/home-loan.png": "/static/media/home-loan.58b64d196b3d79183828.png",
+    "static/media/ppf-calc.png": "/static/media/ppf-calc.10cd70590e0e77faff2c.png",
+    "static/media/expense-calculator.png": "/static/media/expense-calculator.125cebefd94a5b9384cc.png",
+    "static/media/seven-up-and-seven-down.png": "/static/media/seven-up-and-seven-down.1b2ab911f993ced82888.png",
+    "static/media/stock-average.png": "/static/media/stock-average.3435ec6153ae9d434733.png",
+    "static/media/calculator.png": "/static/media/calculator.9609d90547f6dcd89e74.png",
+    "static/media/simple-interest.png": "/static/media/simple-interest.0ac85bf75ce6201f68fb.png",
+    "static/media/weather.js.png": "/static/media/weather.js.4895e214c3a1f89d7886.png",
+    "index.html": "/index.html",
+    "main.98d8e612.css.map": "/static/css/main.98d8e612.css.map",
+    "main.9abcf93f.js.map": "/static/js/main.9abcf93f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.98d8e612.css",
+    "static/js/main.9abcf93f.js"
+  ]
+}
